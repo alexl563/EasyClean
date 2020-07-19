@@ -1,0 +1,141 @@
+.top{
+    max-width: 1600px;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    padding:30px;
+  
+    
+  }
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+
+
+.topnav {
+    margin-top:6px;
+    margin-right:70px;
+    padding:5px;
+    float: right;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: auto;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float:right;
+    color:black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: black;
+    color: white;
+  }
+  .name{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:30px;
+    float: left;
+    text-decoration:none;
+    color:black;
+    width:256px;
+  }
+
+.map{
+    /*margin-top:100px;*/
+    text-align:center;
+    width:100%;
+}
+
+.live{
+  font-size:50px;
+  margin-top:50px;
+  padding: 40px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+
+
+.container1{
+  position: relative;
+  width:50%;
+  display:inline-block;
+  margin-right:5%;
+}
+
+.container2{
+  position: relative;
+  width:50%;
+  display:inline-block;
+}
+
+.image{
+  display:block;
+  width:100%;
+}
+
+.overlay{
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color:#eee;
+}
+
+.container1:hover .overlay{
+  opacity:1;
+}
+.container2:hover .overlay{
+  opacity:1;
+}
+
+.text{
+  color:black;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  font-size:30px;
+  text-decoration:none;
+}
+
+.overlayFade{
+  width:100%;
+  height:100%;
+  top:0%;
+  left:0%;
+  background-color:#ffffff42;
+}
+
+.row{
+  margin-left:5%;
+  margin-right:5%;
+  margin-top:75px;
+  display:flex;
+  flex-direction:row;
+}
+
+.title{
+  margin-top:75px;
+  margin-left:5%;
+  font-size:50px;
+}
+
+.hr1{
+  margin-top:10px;
+  
+}

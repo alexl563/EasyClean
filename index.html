@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+    
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+    
+
+    <title>Bridgehacks</title>
+  </head>
+
+  <body style="margin:0;">
+    
+
+    <div class="top">
+        <a href="index.html"><img class="name" src="Hackathonboarderless.png"></a>
+
+        <div class="topnav">
+            
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            
+        </div>
+    </div>
+
+    <!---<img class="map" src="https://www.boston.com/news/source/2014/03/17/Google%20%20Map.png">--->
+     <div id="mapid"></div>
+     
+     <script>
+       var mykey = config.MY_KEY;
+       var mymap = L.map('mapid').setView([37.350759, -121.907507], 10);
+       L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+       maxZoom: 14,
+       id: 'mapbox/streets-v11',
+       tileSize: 512,
+       zoomOffset: -1,
+       accessToken: mykey
+       }).addTo(mymap);
+        //Bathrooms
+        var markerHallMemorial = L.marker([37.443480, -121.914050]).addTo(mymap);
+        markerHallMemorial.bindPopup("<b>Hall Memorial Park - Washroom").openPopup();
+
+        var markerStarlight = L.marker([37.431480, -121.891440]).addTo(mymap);
+        markerStarlight.bindPopup("<b>Starlight Park - Washroom").openPopup();
+       
+        var markerPinewoodPark = L.marker([37.407670, -121.906650]).addTo(mymap);
+        markerPinewoodPark.bindPopup("<b>Pinewood Park - Washroom").openPopup();
+        
+        var japanTown = L.marker([37.3382914, -121.8928856]).addTo(mymap);
+	    japanTown.bindPopup("<b>Japantown - Washroom").openPopup();
+
+        var paeso = L.marker([37.3307731, -121.8887646]).addTo(mymap);
+        paeso.bindPopup("<b>Paeso - Washroom").openPopup();
+            
+        var beronaWay = L.marker([37.3396462, -121.8260049]).addTo(mymap);
+	    beronaWay.bindPopup("<b>Berona Way - Washroom").openPopup();
+
+        var azueraisAve = L.marker([37.391583, -122.0161267]).addTo(mymap);
+	    azueraisAve.bindPopup("<b>Auzerais Ave - Washroom").openPopup();
+
+        var bentonSt = L.marker([37.3491057,-121.9949831]).addTo(mymap);
+        bentonSt.bindPopup("<b>Benton St - Washroom").openPopup();
+
+        var a = L.marker([37.329479,-121.866055]).addTo(mymap);
+        a.bindPopup("<b>Municipal Rose Garden - Washroom").openPopup();
+
+        var b = L.marker([37.2364648,-121.8997886]).addTo(mymap);
+        b.bindPopup("<b>Marina - Washroom").openPopup();
+
+        var c = L.marker([37.288159,-121.944872]).addTo(mymap);
+        c.bindPopup("<b>Campbell - Washroom").openPopup();
+
+        var d = L.marker([37.2976363,-121.8918891]).addTo(mymap);
+        d.bindPopup("<b>Willow Glen - Washroom").openPopup();
+
+         
+            
+        //Water
+        var caliPure = L.marker([37.4168917,-121.879268]).addTo(mymap);
+	    caliPure.bindPopup("<b>California Pure Water Ink - Clean Water").openPopup();
+
+        var livingWater = L.marker([37.4552593,-121.9122104]).addTo(mymap);
+	    livingWater.bindPopup("<b>Living Water Fountain - Clean Water").openPopup();
+
+        var waterFountain = L.marker([37.2269459,-121.9169037]).addTo(mymap);
+	    waterFountain.bindPopup("<b>WaterFountain - Clean Water").openPopup();
+
+        //showers
+        var SBshower = L.marker([37.3658845,-121.9554154]).addTo(mymap);
+	    SBshower.bindPopup("<b>South Bay Showers - Shower").openPopup();
+
+        var centralYMCA = L.marker([37.3376073,-121.9223935]).addTo(mymap);
+	    centralYMCA.bindPopup("<b>Central YMCA - Shower").openPopup();
+
+        var elCaminoYMCA = L.marker([37.370649,-122.0808786]).addTo(mymap);
+	    elCaminoYMCA.bindPopup("<b>El Camino YMCA - Shower").openPopup();
+        
+        //start
+        var start=  L.marker([37.350759, -121.907507]).addTo(mymap);
+        start.bindPopup("<b>Click on any of the icons to see a where you can quickly sanitize!").openPopup();
+        
+     </script>
+   
+
+        
+
+    <div class="features">
+        <HR class="hr1" COLOR="black" WIDTH="30%" NOSHADE ALIGN="LEFT">
+            <img src="testphoto.png" class="discriptionImage" ALIGN="right">
+        <div class="discription">Features</div>
+        
+    </div>
+
+    <div class="featuresTextContainer">
+        <div class="featuresText">Use this graph to look for places to sanitize in the San Jose area!</div>
+        <div class="featuresText">On this graph you find:</div>
+        <ul class="list">
+            <li>washrooms</li>
+            <li>clean water</li>
+            <li>showers</li>
+        </ul>
+        <div class="featuresText">Hover over the location icons to see what's there. You'll see the name of the location and what it offers in the format of Name - Contents. </div>
+        <div class="featuresText">To zoom in or out, click on the '+' and '-' buttons or use the scrool wheel. </div>
+        <div class="featuresText">For more information on how to stay clean, check out our resources page. We've linked a mask wearing guide as well as some handwashing tips!</div>
+        <div class="bottomImageContainer">
+        <img class="bottomImage" src="Happycleaning.png">
+        </div>
+    </div>
+    
+    
+    </body>
+</html>

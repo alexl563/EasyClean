@@ -1,0 +1,128 @@
+.top{
+    max-width: 1600px;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    padding:30px;
+  
+    
+  }
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+
+
+.topnav {
+    margin-top:6px;
+    margin-right:70px;
+    padding:5px;
+    float: right;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: auto;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float:right;
+    color:black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  .name{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:30px;
+    float: left;
+    text-decoration:none;
+    color:black;
+    width:256px;
+  }
+
+.live{
+  font-size:50px;
+  margin-top:50px;
+  padding: 40px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.row{
+    margin-left:.5%;
+    display:flex;
+    flex-direction:row;
+    margin-top:100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.person{
+    margin-right:20px;
+    text-align:center;
+}
+
+.personend{
+    text-align:center;
+}
+
+
+.image1{
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(Prithvipic.png);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.image2{
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Emmapic.JPG);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.image3{
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(Sampic.jpeg);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+
+.image4{
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Alexpic1.jpeg);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}

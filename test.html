@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+    <title>Bridgehacks</title>
+  </head>
+
+  <body style="margin:0;">
+    
+
+    <div class="top">
+        <a href="index.html"><img class="name" src="https://cdn.discordapp.com/attachments/733844580386209873/734080470710747166/Hackathon_Website_Logo_v7.png"></a>
+
+        <div class="topnav">
+            
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            
+        </div>
+    </div>
+
+    <!---<img class="map" src="https://www.boston.com/news/source/2014/03/17/Google%20%20Map.png">--->
+     <div id="mapid"></div>
+     
+     <script>
+       var mymap = L.map('mapid').setView([37.430759, -121.897507], 13);
+       L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+       maxZoom: 18,
+       id: 'mapbox/streets-v11',
+       tileSize: 512,
+       zoomOffset: -1,
+       accessToken: 'pk.eyJ1IjoiYWxleHRoZXN0YXIiLCJhIjoiY2tjdGFsN3N4MXcyMTJxbGJ0aWllMDllNiJ9.dNdpbHLG9z31ZRxIaaejbw'
+       }).addTo(mymap);
+       var marker = L.marker([37.430759, -121.897507]).addTo(mymap);
+       
+     </script>
+   
+
+        
+
+    <div class="features">
+        <HR class="hr1" COLOR="black" WIDTH="30%" NOSHADE ALIGN="LEFT">
+        <div class="discription">Features</div>
+
+        <div class="discriptionContainer">
+            
+            <div class="key">
+                
+            </div>
+            
+            <div class="imageForDisc">
+                <img src="https://storage.googleapis.com/gweb-cloudblog-publish/images/MapImage1.max-600x600.png" class="discriptionImage" ALIGN="right">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="test">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    
+    
+    </body>
+</html>
