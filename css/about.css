@@ -87,7 +87,7 @@ body{
   height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(Prithvipic.png);
+  background-image: url(../images/Prithvipic.png);
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 50%;
@@ -98,7 +98,7 @@ body{
     height: 300px;
     background-position: center;
     background-size: cover;
-    background-image: url(Emmapic.JPG);
+    background-image: url(../images/Emmapic.JPG);
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 50%;
@@ -109,7 +109,7 @@ body{
   height: 300px;
   background-position: center;
   background-size: cover;
-  background-image: url(Sampic.jpeg);
+  background-image: url(../images/Sampic.jpeg);
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 50%;
@@ -121,7 +121,7 @@ body{
     height: 300px;
     background-position: center;
     background-size: cover;
-    background-image: url(Alexpic1.jpeg);
+    background-image: url(../images/Alexpic1.jpeg);
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 50%;
